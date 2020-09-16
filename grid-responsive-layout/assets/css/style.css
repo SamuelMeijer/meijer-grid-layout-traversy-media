@@ -1,6 +1,7 @@
 /* 
     TODO:
-    - Fix ".info .btn" position
+    - Fix ".info .btn" position.
+    SOLUTION: Traversy doesn't use reset on margin + padding for all elements, if the reset in this css is removed the buttons will position themselves correctly.
 */
 
 /* ***** VARIABLES ***** */
@@ -14,8 +15,10 @@
 /* ***** BASIC RESET ***** */
 * {
     box-sizing: border-box;
+    /* REMOVED DUE TO POSITIONG ERROR SINCE TRAVERSY DOES NOT USE THIS RESET METHOD.
     margin: 0;
     padding: 0;
+    */
 }
 
 /* ***** GENERAL SETTINGS ***** */
